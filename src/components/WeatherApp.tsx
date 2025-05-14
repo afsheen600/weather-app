@@ -164,6 +164,7 @@ const WeatherApp = () => {
             variant="outlined"
             label="Enter city name"
             value={searchTerm}
+            data-testid="city-input"
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setSearchTerm(e.target.value)
             }
@@ -180,6 +181,7 @@ const WeatherApp = () => {
             variant="contained"
             color="primary"
             size="large"
+            data-testid="get-weather-button"
             sx={{
               minWidth: isMobile ? "100%" : 150,
               borderRadius: 2,
